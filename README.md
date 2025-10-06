@@ -94,7 +94,7 @@ oc get build
 ```
 
 #### Example output:
-```bash
+```text
 NAME              TYPE     FROM    STATUS     STARTED     DURATION
 node-debug-app-2  Docker   Binary  Complete   2 days ago  42s
 ```
@@ -117,10 +117,17 @@ curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
 
 
 
-**### Step 7:** ⚡ Modify app inside container
+### Step 7: ⚡ Modify app inside container
 
 ```bash
 oc cp server.js node-debug-app-6748f89fb-hdbqz:/app/server.js
 oc delete route node-debug-app
+oc expose svc/node-debug-app
+```
+<h3 style="color: blue;">Rebuild and expose again</h3>
+
+```bash
+oc delete all -l app=node-debug-app
+oc new-app . --name=node-debug-app
 oc expose svc/node-debug-app
 ```
