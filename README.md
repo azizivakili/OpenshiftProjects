@@ -71,3 +71,24 @@ cat <<EOF > package.json
 }
 EOF
 ```
+
+
+###  Step 4: Create Dockerfile
+```bash
+cat <<EOF > Dockerfile
+FROM node:18
+RUN apt-get update && apt-get install -y nano && rm -rf /var/lib/apt/lists/*
+WORKDIR /app
+COPY . .
+RUN chmod -R 777 /app
+RUN npm install
+EXPOSE 3000
+CMD ["npm", "start"]
+EOF
+```
+
+### Step 5: Build and verify image
+```bash
+oc start-build node-debug-app --from-dir=. --follow
+oc get build
+```
