@@ -145,3 +145,16 @@ curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
 ```
 
 
+#### Output:
+
+``Helllooo azizi use OpenShifft 🚀 now i want to bring second change!``
+
+
+
+
+## Summery:
+ * Built and deployed your Node.js app on OpenShift
+
+* Modified and tested live changes inside a running container
+
+* Verified updates using curl
