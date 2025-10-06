@@ -1,12 +1,10 @@
 ## OpenshiftProjects
 # Debugging a Running Node.js App in OpenShift
 
+####Date: 15.08.2025
+####Prepared by: Latifa Azizi Vakili
+####Topic: Changing a Running Container (Chapter 2)
 
-<small>
-<p>Date: 15.08.2025</p>
-<p>Prepared by: Latifa Azizi Vakili</p>
-<p>Topic: Changing a Running Container (Chapter 2)</p>
-</small>
 
 
 
