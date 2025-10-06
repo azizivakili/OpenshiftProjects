@@ -93,9 +93,24 @@ oc start-build node-debug-app --from-dir=. --follow
 oc get build
 ```
 
-
 #### Example output:
 ```bash
 NAME              TYPE     FROM    STATUS     STARTED     DURATION
 node-debug-app-2  Docker   Binary  Complete   2 days ago  42s
 ```
+
+### Step 6: Deploy and expose app
+```bash
+oc new-app . --name=node-debug-app
+oc get pods
+oc expose svc/node-debug-app
+oc get route
+```
+#### <span style="color: Blue;">Access The App:</span>
+```bash
+curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
+```
+
+#### Output:
+
+`Helllooo azizi use OpenShifft 🚀`
