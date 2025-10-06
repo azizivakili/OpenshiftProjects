@@ -95,7 +95,7 @@ oc get build
 
 
 #### Example output:
-```bash
+```text
 NAME              TYPE     FROM    STATUS     STARTED     DURATION
 node-debug-app-2  Docker   Binary  Complete   2 days ago  42s
-```bash
+```
