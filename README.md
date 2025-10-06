@@ -30,16 +30,23 @@ node-debug-app/
 mkdir node-debug-app && cd node-debug-app
 ```
 
-### Step 2: Create server.js
+### Step 2: Create `server.js`
 
+Run the following command in your terminal to create the `server.js` file:
+
+```bash
 cat <<EOF > server.js
 const express = require('express');
 const app = express();
 const port = 3000;
+
+// Define a route
 app.get('/', (req, res) => {
- res.send('Helllooo azizi use OpenShifft  '); // Intentional typo for debugging
+  res.send('Helllooo azizi use OpenShifft'); // Intentional typo for debugging
 });
+
+// Start the server
 app.listen(port, () => {
- console.log(\`App listening at http://localhost:\${port}\`);
+  console.log(\`App listening at http://localhost:\${port}\`);
 });
 EOF
