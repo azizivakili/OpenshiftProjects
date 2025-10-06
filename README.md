@@ -1,4 +1,4 @@
-# OpenshiftProjects
+## OpenshiftProjects
 # Debugging a Running Node.js App in OpenShift
 Date: 15.08.2025  
 Prepared by: Latifa Azizi Vakili  
@@ -21,3 +21,8 @@ node-debug-app/
     ├── Services        # Service exposing the pod
     └── Routes          # Route to access app externally
 
+
+### Step 1: Set up the environment
+
+```bash
+mkdir node-debug-app && cd node-debug-app
