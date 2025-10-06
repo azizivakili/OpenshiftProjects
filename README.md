@@ -92,3 +92,10 @@ EOF
 oc start-build node-debug-app --from-dir=. --follow
 oc get build
 ```
+
+
+#### Example output:
+```bash
+NAME              TYPE     FROM    STATUS     STARTED     DURATION
+node-debug-app-2  Docker   Binary  Complete   2 days ago  42s
+```bash
