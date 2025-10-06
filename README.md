@@ -50,3 +50,24 @@ app.listen(port, () => {
   console.log(\`App listening at http://localhost:\${port}\`);
 });
 EOF
+```
+
+
+
+### Step 3: Create `package.json`
+
+```bash
+cat <<EOF > package.json
+{
+  "name": "node-debug-app",
+  "version": "1.0.0",
+  "main": "server.js",
+  "dependencies": {
+    "express": "^4.18.2"
+  },
+  "scripts": {
+    "start": "node server.js"
+  }
+}
+EOF
+```
