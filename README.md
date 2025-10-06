@@ -122,6 +122,7 @@ curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
 
 ``Helllooo azizi use OpenShifft 🚀``
 
+<br>  
 
 ### Step 7: ⚡ Modify app inside container
 
@@ -131,9 +132,7 @@ oc delete route node-debug-app
 oc expose svc/node-debug-app
 ```
 
-
 <h3 style="color: blue;">Rebuild and expose again</h3>
-
 
 ```bash
 
@@ -148,14 +147,14 @@ oc expose svc/node-debug-app
 curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
 
 ```
-
+<br>
 
 #### Output:
 
 ``Helllooo azizi use OpenShifft 🚀 now i want to bring second change!``
 
 
-
+<br>
 
 ## Summery:
  * Built and deployed your Node.js app on OpenShift
