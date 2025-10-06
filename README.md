@@ -20,6 +20,8 @@ node-debug-app/
     ├── Pods            # Running Node.js pods
     ├── Services        # Service exposing the pod
     └── Routes          # Route to access app externally
+```
+
 
 
 ### Step 1: Set up the environment
