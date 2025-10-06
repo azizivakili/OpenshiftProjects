@@ -106,6 +106,7 @@ oc get pods
 oc expose svc/node-debug-app
 oc get route
 ```
+
 #### <span style="color: Blue;">Access The App:</span>
 
 ```bash
@@ -115,9 +116,6 @@ curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
 #### Output:
 
 ``Helllooo azizi use OpenShifft 🚀``
-
-
-
 
 
 ### Step 7: ⚡ Modify app inside container
@@ -133,7 +131,17 @@ oc expose svc/node-debug-app
 
 
 ```bash
+
 oc delete all -l app=node-debug-app
 oc new-app . --name=node-debug-app
 oc expose svc/node-debug-app
 ```
+
+### Final Check 
+
+```bash
+curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
+
+```
+
+
