@@ -107,6 +107,7 @@ oc expose svc/node-debug-app
 oc get route
 ```
 #### <span style="color: Blue;">Access The App:</span>
+
 ```bash
 curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
 ```
@@ -117,6 +118,8 @@ curl node-debug-app-user-azizi-debugcontainer.apps.akaishi.promos-consult.de
 
 
 
+
+
 ### Step 7: ⚡ Modify app inside container
 
 ```bash
@@ -124,7 +127,10 @@ oc cp server.js node-debug-app-6748f89fb-hdbqz:/app/server.js
 oc delete route node-debug-app
 oc expose svc/node-debug-app
 ```
+
+
 <h3 style="color: blue;">Rebuild and expose again</h3>
+
 
 ```bash
 oc delete all -l app=node-debug-app
